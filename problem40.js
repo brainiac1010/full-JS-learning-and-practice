@@ -1,2 +1,2 @@
-const loli = loli
-console.log("loli")
+console.log("LEARNING JS ");
+console.log(document.body);
