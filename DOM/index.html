@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toure of DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        li {
+            color: blueviolet;
+        }
+
+        #location {
+            color: brown;
+        }
+
+        .place {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>DOM learning</h1>
+    </header>
+    <main>
+        <h1>MY practice DOM</h1>
+        <ul>
+            <li> me </li>
+            <li> my </li>
+            <li> mine </li>
+            <li> yours </li>
+        </ul>
+        <section>
+            <h1 id="location">my travel location</h1>
+            <ul class="place">
+                <li>dhaka</li>
+                <li>comilla</li>
+                <li>chattagram</li>
+                <li>khulna</li>
+            </ul>
+        </section>
+    </main>
+    <script src="/DOM/DOM.js"></script>
+    <script>
+        const collectionOfLi = document.getElementsByTagName('li');
+        console.log(collectionOfLi);
+        for (li of collectionOfLi) {
+            // console.log(li);
+        }
+
+        const h1collection = document.getElementsByTagName('h1');
+        for (const h1 of h1collection) {
+            // console.log(h1.innerText);
+        }
+
+        // querySelectorAll 
+        const someLi = document.querySelectorAll('.place li');
+        // console.log(someLi);
+        for (li of someLi) {
+            console.log(li.innerText);
+        }
+
+        document.getElementById('.location')
+
+    </script>
+</body>
+
+</html>
